@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+/*--------------------------navbar-----------------------------*/
+a{
+    text-decoration: none;
+    color: white;
+    font-family: initial;
+}
+.navbar{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    background: purple;
+    padding: 6px 18px;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+
+.left p{
+ 
+    display: inline;
+    height: 50%;
+    width: 10%;
+    font-weight: bold;
+    color: white;
+}
+.center ul li{
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+
+}
+
+.center ul li i{
+    display:flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 0.5px 8px;
+    padding-right: 5px;
+    position: relative;
+    
+}
+
+.center ul li i::after,
+.center ul li i.active ::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -15px;
+    transition: width0.3s;
+}
+
+.center ul li i:hover::after{
+    width: 100%;
+
+}
+
+
+
+/*--------------------------navbar finished-----------------------------*/
+
+.cartcontainer{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.cart{
+    width: 70%;
+    margin-left: 15%;
+    border: 1px solid white;
+    margin-top: 5%;
+    box-shadow: 5px 5px 20px rgb(63, 62, 62);
+
+}
+.cartbox{
+    margin: 20px auto;
+    width: 95%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td img{
+    height: 90px;
+    width: 90px;
+    margin-right: 10px;
+}
+
+td{
+    padding: 20px 10px ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-size: 18px;
+}
+td input{
+   width: 50px;
+   height: 30px;
+   padding: 5px;
+}
+
+td p{
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+td h1{
+    font-size: 15px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: normal;
+}
+
+td a{
+    cursor: pointer;
+    color: red;
+    font-size: 19px;
+}
+
+.cartinfo{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+th{
+    text-align: left;
+    padding: 10px;
+    color: white;
+    background-color: blueviolet;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 18px;
+}
+
+
+.totalprice{
+    display: flex;
+    justify-content: flex-end;
+}
+.totalprice table{
+    border-top:3px solid purple;
+    width: 100%;
+    max-width: 230px;
+}
+.totalprice td{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
