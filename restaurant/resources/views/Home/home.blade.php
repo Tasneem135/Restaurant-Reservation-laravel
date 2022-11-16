@@ -9,7 +9,8 @@
      <!----------------------------------1st Section------------------------------->
      @include('Home/header')
      @yield('homebody')
-     @include('Home/footer') 
+     @include('Home/footer')
+   
     
      
 
@@ -35,26 +36,8 @@
                 setTimeout('slider()',1000);
             }
 
-
-            
-        </script>
-
-
-<script>
-     let popup=document.getElementById("popup");
-
-function openPopup(){
-    open-popup.classList.add("open-popup"); 
-} 
-
-function closePopup(){
-    open-popup.classList.remove("open-popup"); 
-} 
-    
-    </script>
-
 <!------------------------Script---------------------------->
-    <body>
+    </body>
 
     
 </html>

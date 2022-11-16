@@ -764,6 +764,7 @@ visibility: visible;
 
 /*----------------------footer--------------------*/
 .fcontainer{
+    position: absoulate;
     background-color: whitesmoke;
     width: 100%;
     height: 100%;
